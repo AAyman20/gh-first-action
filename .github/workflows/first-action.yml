@@ -1,0 +1,18 @@
+# workflow name 
+name: First Workflow
+# when this workflow will be executed
+on: workflow_dispatch #workflow_dispatch manually trigger
+#jobs to be executed make sure of the indentations
+jobs:
+  #job name
+  first-job:
+    #determine which environment this job will run on
+    runs-on: ubuntu-latest
+    # determine the steps to be exectuted
+    steps: 
+        # each step should have a name and an action or shell script to run
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+    
