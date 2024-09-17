@@ -13,6 +13,10 @@ jobs:
         # each step should have a name and an action or shell script to run
       - name: Print greeting
         run: echo "Hello World!"
+      - name: Best Workflow
+        run: |
+            echo "Best \n"
+            echo "Workflow"
       - name: Print goodbye
         run: echo "Done - bye!"
     
